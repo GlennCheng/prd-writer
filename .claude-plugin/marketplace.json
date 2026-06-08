@@ -1,0 +1,26 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "GlennCheng-prd-writer",
+  "description": "Interactive PRD creation skill for Claude Code — AI acts as a PhD advisor to brainstorm and clarify requirements",
+  "owner": {
+    "name": "Glenn Cheng",
+    "email": "glenn77217@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "prd-writer",
+      "description": "互動式 PRD 起草 skill。AI 扮演指導教授角色，先腦力激盪確認問題方向，再透過動態 Clarify 互動產出結構化 PRD。支援 Jira/Confluence/Notion/GitHub 整合或無工具環境。",
+      "author": {
+        "name": "Glenn Cheng"
+      },
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/GlennCheng/prd-writer.git",
+        "path": "plugins/prd-writer",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/GlennCheng/prd-writer"
+    }
+  ]
+}
