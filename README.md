@@ -16,31 +16,24 @@ The AI acts as a **PhD advisor** — first brainstorming with you to challenge t
 
 ## Installation
 
-### Via Claude Code CLI
+In Claude Code, run these three slash commands:
 
-```bash
-claude plugin install github:GlennCheng/prd-writer
 ```
+/plugin marketplace add GlennCheng/prd-writer
+```
+→ Successfully added marketplace: GlennCheng-prd-writer
 
-### Manual
+```
+/plugin install prd-writer@GlennCheng-prd-writer
+```
+→ ✓ Installed prd-writer. Run /reload-plugins to apply.
 
-1. Clone this repo
-2. Copy to your Claude plugins cache:
-   ```bash
-   mkdir -p ~/.claude/plugins/cache/GlennCheng-prd-writer/prd-writer/1.0.0
-   cp -r .claude-plugin skills ~/.claude/plugins/cache/GlennCheng-prd-writer/prd-writer/1.0.0/
-   ```
-3. Register in `~/.claude/plugins/installed_plugins.json`:
-   ```json
-   "prd-writer@GlennCheng-prd-writer": [{
-     "scope": "user",
-     "installPath": "~/.claude/plugins/cache/GlennCheng-prd-writer/prd-writer/1.0.0",
-     "version": "1.0.0",
-     "installedAt": "2026-01-01T00:00:00.000Z",
-     "lastUpdated": "2026-01-01T00:00:00.000Z"
-   }]
-   ```
-4. Restart Claude Code
+```
+/reload-plugins
+```
+→ Reloaded: N plugins · N skills · …
+
+Done. The `prd-writer` skill is now available globally.
 
 ## Usage
 

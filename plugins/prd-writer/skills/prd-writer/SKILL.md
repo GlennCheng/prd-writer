@@ -5,6 +5,24 @@ description: 互動式 PRD（產品需求文件）起草 skill。當使用者說
 
 # PRD Writer
 
+## 進度追蹤（Task List）
+
+**在執行任何 Step 前，立即用 `TodoWrite` 建立以下 task list：**
+
+```
+[ ] 初始化 & 環境偵測
+[ ] 狀態偵測（新建 or 繼續草稿）
+[ ] Clarify 互動（腦力激盪 → 問答 → Checkpoint）
+[ ] PRD 產出
+[ ] 品質驗證
+[ ] 發布（可略過）
+```
+
+每進入新 Step 時，用 `TodoWrite` 將該 task 標為 `in_progress`；完成後標為 `completed`。  
+若使用者選擇略過某步驟（如不發布），將其標為 `completed`（附註 "skipped"）。
+
+---
+
 ## 設計哲學
 
 > **AI 是指導教授，不是執行機器。**
