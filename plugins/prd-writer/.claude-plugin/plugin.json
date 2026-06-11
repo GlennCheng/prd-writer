@@ -1,6 +1,6 @@
 {
   "name": "prd-writer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "PM 用 AI 起草 PRD（產品需求文件）的互動式流程。支援 Clarify 分輪互動、Draft-First 狀態機、跨 Session 持久化。適用於任何專案，可選擇性整合 Jira / Confluence。",
   "author": {
     "name": "Glenn Cheng",
